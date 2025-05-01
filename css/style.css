@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: "Playwrite AU SA", cursive;
+}
+/* nav */
+.mini-header {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #1d1515;
+  padding: 15px 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.mini-header a {
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.mini-header.show {
+  opacity: 1;
+}
+/* hero section */
+#home {
+  position: relative;
+  background: linear-gradient(to left, #97847f, #080302);
+  overflow: hidden;
+
+}
+.star-overlay {
+  position: absolute;
+  bottom: 34%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 200px;
+  background-image: radial-gradient(rgb(240, 205, 9) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.7;
+  animation: animateStars 40s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+@keyframes animateStars {
+  0% { background-position: 0 0; }
+  100% { background-position: -100px -100px; }
+}
+
+#home h1,
+#home p,
+#home a {
+  position: relative;
+  z-index: 1;
+}
+#lottie-animation{
+  width: 300px;
+  margin: auto;
+}
+
+
+/* services */
+#services{
+    background:#e0e0e0;
+    padding-bottom: 50px;
+}
+ .hover-shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+  transform: scale(1.05);
+
+}
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+ padding: 6px;
+}
+
+.hover-shadow:hover .icon-circle {
+  border-color: #35332c; 
+ 
+}
+
+/* why-us section */
+#why-us ,#services{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.why-us img {
+  width: 350px;
+}
+
+.zoom-hover {
+  transition: transform 0.5s ease;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.05);
+}
+/* projects */
+#projects{
+  padding: 20px 0 20px 0;
+  background:#e0e0e0;
+}
+
+/* Carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+/* footer */
+.footer{
+  background-color: #757473;
+}
+
+/* cursor */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.spark {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: blue;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  animation: spark-animation 0.5s ease-out forwards;
+}
+
+@keyframes spark-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+.frame-container {
+  position: fixed;         
+  bottom: 20px;             
+  right: 70px;          
+  width: 150px;        
+  height: auto;
+  z-index: 1000;          
+  pointer-events: none;   }
+
+img {
+  width:250px;
+}
