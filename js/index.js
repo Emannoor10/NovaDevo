@@ -14,7 +14,7 @@
     }
   });
 
-  const totalFrames =30;
+  const totalFrames =50;
 const frameImg = document.getElementById("videoFrame");
 
 window.addEventListener("scroll", () => {
